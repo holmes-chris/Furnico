@@ -32,6 +32,7 @@ git lfs install
 
 ### Start local servers
 
+Ensure MongoDB is running locally.
 Start Node.js server:
 ```sh
 cd server
@@ -43,4 +44,7 @@ Start React server:
 cd client
 npm start
 ```
+
+### Usage
+Naviagate to 'http://localhost:3000' to view the application
 
