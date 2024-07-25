@@ -30,6 +30,11 @@ cd Furnico
 git lfs install
 ```
 
+### Install necessary packages
+```sh
+npm install
+```
+
 ### Start local servers
 
 Ensure MongoDB is running locally.

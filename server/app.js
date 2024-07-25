@@ -17,9 +17,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //db
-const mongo_uri = 'testuser1:testing12123@furnico.pdgga6h.mongodb.net/?retryWrites=true&w=majority&appName=Furnico'
+const mongo_uri = 'mongodb+srv://testuser1:testing12123@furnico.pdgga6h.mongodb.net/?retryWrites=true&w=majority&appName=Furnico'
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(mongo_uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
