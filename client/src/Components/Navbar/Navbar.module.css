@@ -1,0 +1,209 @@
+ .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #434555;
+    height: 100px;
+    color: white;
+    width: 100%;
+  }
+
+
+  .nav-logo-large {
+    max-height: 50px;
+    margin-left: 100px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .search-bar {
+    /* flex-grow: 1; */
+    margin: 0 1rem;
+    width: 30%;
+    position: relative;
+    top: 1px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 50px;
+
+  }
+
+  .nav-links > * {
+    color: white;
+  }
+
+  .nav-links-active > * {
+    color: white;
+  }
+
+  .nav-links-active {
+    padding: 20px 70px 20px 0;
+    gap: 1rem;
+    color: white;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 50px;
+  }
+  
+  .nav-links .admin-bttn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .admin-bttn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .admin-no-logo {
+    display: none;
+    color: white;
+  }
+
+  .admin-with-logo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+  }
+  
+  .nav-icon {
+    display: flex;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  
+  .cart {
+    position: relative;
+    display: flex;
+
+  }
+  
+  .cart-count {
+    position: relative;
+    bottom: 12px;
+    right: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .mobile {
+    display: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .numItems {
+    width: 18px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: green;
+    position: absolute;
+    bottom: 17px;
+    left: 33px;
+  }
+
+  .cart-count-mobile {
+    background-color:green;
+    text-align: center;
+    border-radius: 100px;
+    width: 18px;
+    position: absolute;
+    top: -6px;
+    right: -4px;
+  }
+  
+  .menu-bttn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+
+  .tutorial-link {
+    color: white;
+  }
+  
+  @media (max-width: 1024px) {
+    .search-bar {
+      display: none;
+    }
+
+    .nav-logo-container {
+      margin: auto;
+    }
+  
+    .nav-links {
+      display: none;
+      color: white
+    }
+  
+    .mobile {
+      display: flex;
+      position: absolute;
+      right: 12px;
+      z-index: 1;
+    }
+
+    .nav-logo-large {
+      display: flex;
+      margin: auto;
+    }
+
+    
+  
+    .nav-links-active {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-end;
+      top: 86px;
+      right: 0;
+      width: 100%;
+      background-color: #363845;
+      z-index: 1;
+      height: 100vh;
+      color: white ;
+      font-size: 20px;
+      font-weight: 300;
+      margin-right: 0;
+    }
+
+    .admin-no-logo {
+        display: flex;
+      }
+    
+    .admin-with-logo {
+        display: none;
+      }
+      
+  }
+  

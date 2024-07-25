@@ -1,0 +1,30 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 2000px;
+    z-index: 2;
+    
+  }
+  
+.main-content {
+    margin-top: 186px; 
+    padding: 20px;
+    flex-grow: 1;
+    position: relative;
+    
+}
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    /* height: 100vh; */
+  }
+}
+
+  

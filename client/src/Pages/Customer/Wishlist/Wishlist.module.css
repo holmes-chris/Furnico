@@ -1,0 +1,160 @@
+.wishlist-container {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   width: 80%;
+   height: 100%;
+   gap: 0;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.wishlist-header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    margin: 10px auto;
+    height: 100px;
+    width: 86%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.home-bttn {
+    background-color: #878FA3;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    height: 40px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.back-arrow {
+    display: flex;
+    margin: auto 6px auto 2px;
+}
+
+.header-text {
+    margin: auto;
+}
+
+.wishlist {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    margin-top: 50px;
+}
+
+.product-container {
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    position: relative;
+    top: 100px;
+    margin-bottom: 15px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 30px;
+}
+
+.details-container > * {
+    margin-bottom: 6px;
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product-description {
+    font-size: 14px;
+}
+
+.add-to-cart-bttn {
+    font-size: 14px;
+    margin-right: auto;
+    border: none;
+    text-decoration: underline;
+    background: none;
+}
+
+.remove-bttn {
+    font-size: 14px;
+    margin-right: auto;
+    border: none;
+    text-decoration: underline;
+    background: none;
+}
+
+.price-left {
+    display: none;
+    font-size: 14px;
+}
+
+.price-right-container {
+    margin-left: auto;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.wishlist-empty {
+  
+    position: absolute;
+    top: 130px;
+}
+
+@media (max-width: 854px) {
+    .wishlist-container {
+        width: 95%;
+    }
+    .wishlist-header {
+        height: 100px;
+        display: flex;
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .header-text {
+        margin-top: 150px;
+    }
+    .price-left {
+        display: flex;
+    }
+
+    .price-right-container {
+        display: none;
+    }
+
+    .wishlist {
+        margin-top: 80px;
+    }
+
+    .mobile-search {
+        display: block;
+    }
+
+    .wishlist-empty {
+        top: 240px;
+    }
+}

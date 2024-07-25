@@ -1,0 +1,266 @@
+.top-nav-container {
+    position: relative;
+    height: 86px;
+    background-color: #434555;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.center-nav {
+    display: none;
+}
+
+.nav-mobile-container {
+    display: none;
+    position: absolute;
+}
+
+.mobile-links-container {
+    background-color: #363745;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    top: 120px;
+    z-index: 4;
+    height: 100vh;
+    width: 100%;
+}
+
+.mobile-links-container > * {
+    color: white;
+    font-weight: 200;
+    padding: 10px 5px 10px 20px;
+}
+
+.shipments-container > *{
+    color: white;
+}
+
+.shipments-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.cart-count-mobile {
+    background-color: green;
+    top: 0;
+    left: 92px;
+    position: absolute;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.nav-page-label {
+    display: none;
+}
+
+.main-logo-container {
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.mobile-links-container {
+    display: none;
+}
+
+.main-logo {
+    width: 150px;
+    margin-bottom: 6px;
+}
+
+.nav-top-links {
+    display: flex;
+    height: 80%;
+    position: absolute;
+    right: 5%;
+    align-items: center;
+    text-align: center;
+    top: 12px;
+}
+
+.nav-top-links > * {
+    color: white;
+    font-size: 35px;
+    margin: auto 20px auto 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.shop-link-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cart-link-container {
+    display: flex;
+    position: relative;
+}
+
+.shop-link {
+    font-size: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    background-color: green;
+    right: -10px;
+    top: -12px;
+    padding: 3px;
+    width: 25px;
+    border-radius: 100px;
+    font-weight: 400;
+}
+
+.shop-link-text {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.side-panel-container {
+    background-color: #434555;
+    height: 100vh;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-link-container, .order-link-container,
+.products-link-container, .shipments-link-container {
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 60px;
+    margin-top: 1px;
+    position: relative;
+}
+
+.dash-link-container:hover, .order-link-container:hover,
+.products-link-container:hover, .shipments-link-container:hover {
+    background-color: #5d6075;
+    
+}
+
+.order-link, .dash-link, .products-link, .shipments-link {
+    font-weight: 300;
+    margin: auto;
+}
+
+.dash-icon, .order-icon, .products-icon, .shipments-icon {
+    font-size: 30px;
+    position: absolute;
+    left: 20px;
+}
+
+.active {
+    background-color: #878FA3 !important;
+}
+
+.panel-logo-container {
+    text-align: center;
+    align-items: center;
+    margin: 17px auto;
+    display: flex;
+}
+
+.panel-logo {
+    width: 50px;
+    border-radius: 6px;
+}
+
+.panel-logo-label {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-left: 13px;
+    font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+    .top-nav-container {
+        height: 120px;
+    }
+    .side-panel-container {
+        display: none;
+    }
+
+    .mobile-links-container {
+        display: flex;
+    }
+
+    .main-logo-container {
+        display: none;
+    }
+
+    .nav-mobile-container {
+        display: inline-flex;
+        position: absolute;
+        left: 40px;    
+    }
+    .main-logo {
+        display: none;
+    }
+
+    .nav-mobile-icon {
+        color: white;
+        font-size: 50px;
+    }
+
+    .nav-page-label {
+        background-color: #434555;
+        width: 240px;
+        height: 48px;
+        display: flex;
+        border-radius: 0 0 100px 100px;
+        margin-top: 25px;
+    }
+
+    .center-nav {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .page-label {
+        color: white;
+        margin: auto;
+        font-weight: 200;
+    }
+
+    .mobile-logo {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(93, 101, 120);
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .mobile-nav-admin {
+        font-weight: 200;
+        color: white;
+        text-align: center;
+        padding: 4px 0 7px 0;
+    }
+}
+
+@media (max-width: 704px) {
+    .shop-link-container {
+        display: none;
+    }
+}

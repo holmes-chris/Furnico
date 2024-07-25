@@ -1,0 +1,154 @@
+.home-container {
+    width: 75%;
+    margin-left: 20%;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.search-input {
+    width: 350px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    border: none;
+    padding-left: 20px;
+}
+
+.sort-bttn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(183, 183, 183);
+    background: none;
+    display: flex;
+    position: relative;
+    margin-left: 40px;
+}
+.sort-icon {
+    top: 9px;
+    left: 10px;
+    font-size: 20px;
+    position: absolute;
+    color: rgb(155, 155, 155);
+}
+
+.sort-bttn p {
+    margin: auto auto auto 43px;
+    color: rgb(140, 140, 140)
+}
+
+.products-container {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 120px;
+    padding: 20px;
+}
+
+.product-container {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 220px;
+    height: 220px;
+}
+
+.product-details-container {
+    margin-bottom: 25px;
+    
+}
+
+.product-details-container > * {
+    margin-bottom: 7px;
+    color: black;
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product-price {
+    font-size: 20px;
+}
+
+.product-bttn {
+    background-color: #529761;
+    width: 136px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    margin-top: auto;
+}
+
+.bttn-icon {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: 17px;
+}
+
+.bttn-text {
+    font-size: 18px;
+    margin: auto auto auto 43px;
+    font-weight: 400;
+}
+
+.modal-container {
+    background-color: purple;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+}
+
+@media (max-width: 1324px) {
+    .home-container {
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+    }
+
+    .product-container {
+        width: 300px;
+    }
+}
+
+@media (max-width: 624px) {
+    .sort-bttn {
+        margin: 15px 0 0 auto;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+}

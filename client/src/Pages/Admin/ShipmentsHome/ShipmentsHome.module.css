@@ -1,0 +1,41 @@
+.shipments-home-container {
+    position: relative;
+    width: 80%;
+    left: 16%;
+}
+
+.search {
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    border: none;
+    width: 345px;
+    height: 40px;
+    padding-left: 16px;
+}
+
+.shipments-header {
+    display: flex;
+    padding: 2px;
+}
+
+.header-text {
+    margin: auto;
+}
+
+.shipments-table {
+    margin-top: 30px;
+}
+
+@media (max-width: 1694px) {
+    .shipments-home-container {
+        width: 80%;
+        left: 22%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .shipments-home-container {
+        width: 95%;
+        left: 6%;
+    }
+}

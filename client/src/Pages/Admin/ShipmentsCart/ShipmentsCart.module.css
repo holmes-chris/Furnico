@@ -1,0 +1,40 @@
+.cart-container {
+    position: relative;
+    left: 12%;
+    width: 87%;
+    
+}
+
+.cart-header-container p {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+@media (max-width: 1724px) {
+    .cart-container {
+        left: 14%;
+    }
+}
+
+@media (max-width: 1494px) {
+    .cart-container {
+        left: 17%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cart-container {
+        left: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cart-container {
+        left: 0;
+        width: 100%;
+    }
+    .cart-table-container {
+        width: 100%;
+    }
+}
+

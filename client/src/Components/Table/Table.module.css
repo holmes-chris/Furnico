@@ -1,0 +1,75 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    
+}
+
+tr {
+    background: none;
+    position: relative;
+}
+
+tr:hover {
+    background: rgb(220, 225, 235) !important;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+th, td {
+    border-left: 1px solid rgb(229, 229, 229);
+    padding: 10px 5px 10px 5px;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color:white;
+    z-index: 1;
+}
+
+
+
+.table-container {
+    max-height: 450px;
+    overflow: scroll;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.order-link {
+    display: contents;
+}
+
+.col4 {
+    background-color: #878FA3;
+    border-radius: 6px;
+    color: white;
+    padding: 7px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 140px;
+}
+
+.cell4 {
+    padding:10px;
+    width: 145px;
+
+}
+
+.data-row {
+    width: 100%;
+    align-items: center;
+}
+
+.col4.completed {
+    background-color:green;
+}

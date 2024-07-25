@@ -1,0 +1,156 @@
+.order-container {
+    padding: 10px;
+    position: relative;
+    left: 23%;
+    width: 70%;
+    max-width: 1500px;
+}
+
+.back-container {
+    background-color: #878FA3;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+    height: 36px;
+}
+
+.back-icon {
+   display: flex;
+}
+
+.back-text {
+    margin-left: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.order-header-container {
+    display: flex;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.order-id-text {
+    font-size: 40px;
+    font-weight: 400;
+    color: #434555;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.status-bttn-container {
+    background-color: #878FA3;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.status-text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+
+.completed {
+    background-color: green !important;
+}
+
+.contact-container {
+    padding: 1px;
+}
+
+.contact {
+    background-color: #F8F8F8;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.contact p {
+    font-weight: 400;
+}
+
+.order-list-container {
+    margin-top: 50px;
+}
+
+.items-container {
+    display: flex;
+}
+
+.items {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    width: 100%;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.item-img {
+    width: 130px;
+}
+
+.item-details {
+    padding: 5px;
+    margin: auto auto auto 10px;
+}
+
+.item-details > * {
+    margin-bottom: 5px;
+}
+
+.order-total {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.order-total p {
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .order-container {
+        left: 4%;
+        width: 90%;
+    }
+    .order-id-text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 684px) {
+    .order-container {
+        left: 0;
+        width: 97%;
+    }
+    .order-id-text {
+        font-size: 20px;
+    }
+
+    .order-header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status-container {
+        margin: 20px auto auto auto;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}

@@ -1,0 +1,12 @@
+.header-container {
+    width: 100%;
+    margin: auto;
+}
+
+.header-title {
+    border-bottom: 2px solid #e2e2e2;
+    color: #575757;
+    font-weight: 500;
+    padding-bottom: 5px;
+    width: 100%;
+}

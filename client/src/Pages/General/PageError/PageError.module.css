@@ -1,0 +1,45 @@
+.page-error-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+.error-header {
+    display: flex;
+    color: #434555;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+.error-message {
+    display: flex;
+    color: #434555;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.home-link {
+    width: 189px;
+    height: 59px;
+    display: flex;
+    margin: 30px auto;
+}
+
+.home-bttn {
+    background-color: #878FA3;
+    border: none;
+    outline: none;
+    width: 189px;
+    height: 59px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.home-bttn p {
+    color: white;
+    font-size: 24px;
+}

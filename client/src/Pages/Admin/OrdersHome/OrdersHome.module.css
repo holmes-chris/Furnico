@@ -1,0 +1,40 @@
+.orders-page-container {
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    margin-left: 20%;
+    padding: 10px;
+    height: 100%;
+}
+
+.header-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.order-search-container {
+    margin-top: 5%;
+    padding: 10px;
+}
+
+.order-input-box {
+    width: 63%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+
+
+@media (max-width: 1024px) {
+    .orders-page-container {
+        margin: auto;
+        width: 100%;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+}
