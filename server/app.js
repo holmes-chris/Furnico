@@ -17,6 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //db
+const mongo_uri = 'testuser1:testing12123@furnico.pdgga6h.mongodb.net/?retryWrites=true&w=majority&appName=Furnico'
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -39,7 +40,7 @@ app.use("/orders", ordersRoutes)
 app.use("/shipments", shipmentsRoutes)
 
 //port
-const port = process.env.PORT;
+const port = 8080;
 
 //listener
 
