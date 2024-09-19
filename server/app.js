@@ -11,13 +11,13 @@ import morgan from 'morgan';
 import dotenv from "dotenv";
 dotenv.config()
 
+const port = process.env.PORT
+const mongo_uri = process.env.MONGO_URI
 
 //app
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-//db
-const mongo_uri = 'mongodb+srv://testuser1:testing12123@furnico.pdgga6h.mongodb.net/?retryWrites=true&w=majority&appName=Furnico'
 
 mongoose.connect(mongo_uri, {
     useNewUrlParser: true,
@@ -32,15 +32,11 @@ mongoose.connect(mongo_uri, {
 app.use(morgan("dev"))
 app.use(cors({origin: true , credentials: true}))
 
-
 //routes
 
 app.use("/products", productsRoutes)
 app.use("/orders", ordersRoutes)
 app.use("/shipments", shipmentsRoutes)
-
-//port
-const port = 8080;
 
 //listener
 

@@ -23,13 +23,6 @@ import ShipmentsCart from './Pages/Admin/ShipmentsCart/ShipmentsCart.js';
 import PageError from './Pages/General/PageError/PageError.js';
 import { fetchProductsRequest, fetchProductsSuccess, fetchProductsFailure }  from "./Redux/Products/productsSlice.js"
 
-
-// import ShippingForm from './Forms/ShippingForm.js';
-
-
-
-
-
 function App() {
   const dispatch = useDispatch();
   const currentState = useSelector((state) => state);
@@ -43,9 +36,6 @@ function App() {
   const product = products.map((item) => item)
   const loading = useSelector(state => state.products.loading)
   const error = useSelector(state => state.products.error)
-
-
-  
 
   useEffect(() => {
     
